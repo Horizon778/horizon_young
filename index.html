@@ -1,51 +1,64 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="zh-cmn-Hans">
+<!--头部-->
 <head>
-    <meta charset="UTF-8" />
-    <meta name="author" content="Horizon">
-    <meta http-equiv="refresh" content="30">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, shrink-to-fit=no"/>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Horizon的小窝</title>
+    <style>
+        body {
+             margin:0;
+        }
 
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/mdui@1.0.2/dist/css/mdui.min.css"/>
-    <title>Horizon的小窝(horizon86.ga)</title>
-    <style type="text/css">
-        h1 {color:rgb(36, 124, 182);}
-        p {color: lightskyblue;}
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            width: 15%;
+            background-color: black;
+            position: fixed;
+            height: 100%;
+            overflow: auto;
+        }
+
+        li a {
+            display: block;
+            color: darkgray;
+            padding: 8px 16px;
+            text-decoration: none;
+        }
+
+        li a.active {
+            background-color: saddlebrown;
+            color: seashell;
+        }
+
+        li a:hover:not(.active) {
+            background-color: slategray;
+            color: seashell;
+        }
     </style>
-    </head>
+</head>
 
+<!--主体-->
 <body>
+    <ul>
+        <li><a class="active" href="#主页">主页</a></li>
+        <li><a href="./ziyuan.html">资源链接</a></li>
+        <li><a href="#contact">联系</a></li>
+        <li><a href="#about">关于</a></li>
+    </ul>    
 
-    <div id="container" style="width: 1080px;">
-
-    <div id="header" style="background-color: rgb(9, 184, 228);">
-        <h1 style="color: rgb(85, 89, 94); margin-bottom: 0;" >Horizon的小窝</h1></div>
-
-        <div id="menu" style="background-color: rgb(96, 194, 226); height:1920px;width:150px;float:left">
-            <b>在这里你可以</b><br>
-            <details>
-                <summary>学习</summary>
-                <p>成为<a href="https://www.runoob.com/">程序员</a><br>
-                    成为<a href="https://space.bilibili.com/279957127">剪辑师</a><br>
-                    成为<a href="https://space.bilibili.com/6708009">建模师</a>
-                </p>
-              </details>
-
-            <details>
-                <summary>娱乐</summary>
-                <p>各种<a href="https://space.bilibili.com/229733301">音乐现场</a></p>
-            </details>
-        </div>
-
-        <div id="conten" style="background-color: honeydew;height:200px;width:980px;float:left;">新年快乐！</div>
-
-        <div id="footer" style="background-color:#47bbe9;clear:both;text-align:center;">
-            版权 © horizon86.ga </div>
-
+    <div style="margin-left:15%; padding: 1px 16px;height: 750px; background-image: url(./img/img01.jpg);background-size: 1340px;">
+        <h1 style="text-align: center;color: cornflowerblue;">这是一个个人博客</h1>
+        <h2 style="text-align: right;">博客的作者是个业余选手</h2>
+        <p style="font-size: 100px; font-style: oblique; text-align: center;">目前还不知道说啥</p>
+        <p style="font-size: 100px; font-style: oblique; text-align: center;color: red;">新年快乐！</p>
+        <p></p>
     </div>
-    <script src="https://cdn.jsdelivr.net/npm/mdui@1.0.2/dist/js/mdui.min.js"></script>
 
+    <div id="footer" style="background-color:#8b4b0f;clear:both;text-align:center;">
+        版权 © 2022 @horizon86.ga </div>
 </body>
 </html>
-
